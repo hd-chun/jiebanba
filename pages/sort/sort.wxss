@@ -1,0 +1,84 @@
+.item {
+  position: absolute;
+  border: 1px solid black;
+  font-size: 13px;
+  width: 90px;
+  border-radius: 90px;
+}
+
+.item_container {
+  height: 300rpx;
+  position: relative;
+}
+
+.wholeer {
+  background-color: #fff;
+  width: 700rpx;
+  height: auto;
+  /* margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-bottom: 27rpx; */
+}
+
+.pp {
+  /* margin-left: 10rpx;
+  margin-right: 10rpx; */
+}
+
+.scroll-lan {
+  width: 100%;
+  height: auto;
+}
+
+.scroll-view_H {
+  width: 100%;
+}
+
+/* .image-close {
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+.image {
+  width: 188rpx;
+  height: 188rpx;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  border-radius: 12rpx;
+  overflow: hidden;
+  border: 1rpx dashed #7c7c7c;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  margin-top: 10rpx;
+}
+
+.img-img {
+  width: 192rpx;
+  height: 192rpx;
+}
+
+.image-plus::before, .image-plus::after {
+  content: '';
+  width: 50%;
+  height: 1px;
+  background: #7f7f7f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.image-plus::before {
+  transform: translate(-50%, -50%) rotate(0);
+}
+
+.image-plus::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}

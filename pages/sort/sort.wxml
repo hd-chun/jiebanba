@@ -1,0 +1,60 @@
+
+
+<view class='wholeer'>
+
+  <view class='pp'>
+
+
+
+    <view class='scroll-lan'>
+
+
+
+      <view class="scroll-view_H">
+        <view class='image' wx:for="{{pics}}" bindtap="previewImage" wx:for-item="image" data-index='{{index}}' style="left:{{index==current?move_x:image.left}}px;top:{{index==current?move_y:image.top}}px" catchtouchmove="move" catchtouchstart="movestart" bindtouchend="moveend" >
+          <image class='img-img' src='{{image.file}}' mode="aspectFill" data-index="{{index}}"></image>
+          <!-- <text class="image-close" catchtap="onDeleteImgTap" data-index="{{index}}"></text> -->
+        </view>
+
+
+
+
+        <view class='image' wx:if="{{pics.length<9}}" bindtap="onChooseUploadImageTap">
+          <view class="image-plus"></view>
+        </view>
+
+
+
+
+
+      </view>
+
+
+
+
+
+    </view>
+
+
+
+
+
+
+
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
